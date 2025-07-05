@@ -414,44 +414,6 @@
                 font-size: 1.8rem;
                 margin-bottom: 1rem;
             }
-        #page5 {
-            position: relative;
-            min-height: 100vh;
-            display: flex; /* Ensure flexbox for centering content */
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(to bottom right, #ffe4e1, #ffc0cb); /* Reverted to soft pink gradient */
-            width: 100%; /* Ensure it takes full width */
-            max-width: 700px; /* Match main app container max-width */
-            box-sizing: border-box; /* Include padding in width */
-        }
-
-        .flower-title {
-            font-family: 'Great Vibes', cursive; /* Applied Great Vibes font */
-            font-size: 3rem;
-            color: #d82c6c;
-            margin-bottom: 2rem;
-            overflow: hidden; /* For typing effect */
-            white-space: nowrap; /* For typing effect */
-            border-right: .15em solid orange; /* The typing cursor */
-            width: 0; /* Start with zero width for typing effect */
-            max-width: 90%; /* Responsive width */
-            text-align: center;
-        }
-
-        .flower-title.animate-typing {
-            animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #d82c6c; } /* Cursor color */
-        }
+        
           
         }
