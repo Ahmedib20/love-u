@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love U ❤️</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Pacifico and Great Vibes fonts for titles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Dancing+Script:wght@700&family=Pacifico&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="app-container">
+        <!-- Page 1: Initial Question -->
+        <div id="page1" class="page active">
+            <h1>Prove that you're my cutie Esposa</h1>
+            <h2>What do I love the most?</h2>
+            <div id="bubuDuduImageContainer1" class="bubu-dudu-container">
+                <img id="bubuDuduImage1" src="https://placehold.co/150x150/ffc0cb/d82c6c?text=Bubu+Dudu+Focus" alt="Bubu Dudu focusing intently">
+            </div>
+
+            <div class="options-container">
+                <div class="option-item">
+                    <input type="radio" id="realMadrid" name="loveOption" value="realMadrid">
+                    <label for="realMadrid">Real Madrid</label>
+                </div>
+                <div class="option-item">
+                    <input type="radio" id="yourCake" name="loveOption" value="yourCake">
+                    <label for="yourCake">Your Cake 🎂</label>
+                </div>
+                <div class="option-item">
+                    <input type="radio" id="cherry" name="loveOption" value="cherry">
+                    <label for="cherry">Cherry 🍒</label>
+                </div>
+            </div>
+
+            <button id="answerButton1" class="action-button">Answer</button>
+        </div>
+
+        <!-- Page 2: Do You Love Me? -->
+        <div id="page2" class="page">
+            <h2>Do You Love Me?</h2>
+            <div id="bubuDuduImageContainer2" class="bubu-dudu-container">
+                <img id="bubuDuduImage2" src="https://placehold.co/150x150/ffc0cb/d82c6c?text=Bubu+Dudu+Begging" alt="Bubu Dudu begging">
+            </div>
+            <div class="flex gap-4 mt-8">
+                <button id="yesButton" class="action-button">Yes</button>
+                <button id="noButton" class="action-button">No</button>
+            </div>
+            <div id="noInteractionMessage" class="no-interaction-message"></div>
+        </div>
+
+        <!-- Page 3: How Much Do You Love Me? -->
+        <div id="page3" class="page">
+            <h2>How Much do you love me?</h2>
+            <div id="bubuDuduImageContainer3" class="bubu-dudu-container">
+                <img id="bubuDuduImage3" src="https://placehold.co/150x150/ffc0cb/d82c6c?text=Bubu+Dudu+Staring" alt="Bubu Dudu staring">
+            </div>
+            <div class="slider-container">
+                <input type="range" id="loveSlider" min="100" max="1000000" value="100">
+                <span id="loveValueDisplay">100%</span>
+            </div>
+            <button id="answerButton3" class="action-button">Answer</button>
+        </div>
+
+        <!-- Page 4: Final Message -->
+        <div id="page4" class="page">
+            <div id="bubuDuduImageContainer4" class="bubu-dudu-container large-bubu">
+                <img id="bubuDuduImage4" src="https://placehold.co/200x200/a8e6cf/000000?text=Bubu+Dudu+Happy" alt="Bubu Dudu happy">
+            </div>
+            <h2 id="yayText" class="animated-yay">Yaaayyy!</h2>
+            <p id="loveYouTooText" class="love-you-text">I love you too!</p>
+        </div>
+
+         <!-- Page 5: Dudu Sticker -->
+        <div id="page5" class="page">
+            <h2 id="flowerTitle" class="flower-title">Some flowers for my prettiest flower 🌺</h2>
+            <img id="duduSticker" src="assets/dudu-giving-flowers-cute.gif" alt="Large Dudu Sticker with Flower">
+        </div>
+    </div>
+    </div>
+
+    <!-- The floating message is now only used for Page 1's incorrect answer -->
+    <div id="floatingMessage" class="floating-message">
+        You are not my Esposa!
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
